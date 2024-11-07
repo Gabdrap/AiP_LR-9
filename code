@@ -1,1 +1,23 @@
+#include <iostream>
+#include <Windows.h>
+#include <cmath>
 
+using namespace std;
+int num1;
+int num2;
+double r;
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+    cout << "enter number 1: "<< '\n';
+    cin >> num1;
+    cout << "enter number 2: " << '\n';
+    cin >> num2;
+
+    r = ((num1 * (sqrt(num2 + 1))) / (2 * num1 + pow(num2, 2))) + (pow(num1, 2) - 3 * num2);
+
+    cout << "the result is: " << r << endl;
+}
